@@ -8,6 +8,19 @@
     box-sizing: border-box !important;
 }
 
+.home {
+    transition: 300ms linear;
+}
+
+.home:hover {
+    opacity: 1;
+}
+
+.webkit_stoke:hover {
+    -webkit-text-stroke: 0.5px;
+}
+
+
 ::-webkit-scrollbar {
     width: 10px !important;
     height: 9px !important;
@@ -42,6 +55,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    min-height: 80vh;
 }
 
 .started_btn {
@@ -169,9 +183,15 @@ ul {
     max-width: 370px;
     border-radius: 15px;
     background-color: #FFFFFF;
-    box-shadow: 0px 20px 50px 0px #3B3E430D;
+    transition: 300ms linear;
     padding: 25px 13px 25px 14px;
     height: 100%;
+}
+
+.bussiness_box:hover {
+    box-shadow: 0px 20px 50px 0px #3B3E430D;
+    scale: 1;
+
 }
 
 .bussiness_box2 {
@@ -179,20 +199,31 @@ ul {
     max-width: 370px;
     border-radius: 15px;
     background-color: #FFFFFF;
-    box-shadow: 0px 20px 50px 0px #3B3E430D;
+    transition: 300ms linear;
     padding: 25px 13px 25px 14px;
     height: 100%;
+}
+
+.bussiness_box2:hover {
+    box-shadow: 0px 20px 50px 0px #3B3E430D;
+    scale: 1;
+
 }
 
 .bussiness_box3 {
     max-width: 370px;
     width: 100%;
-
+    transition: 300ms linear;
     border-radius: 15px;
     background-color: #FFFFFF;
-    box-shadow: 0px 20px 50px 0px #3B3E430D;
     padding: 25px 13px 25px 14px;
     height: 100%;
+
+}
+
+.bussiness_box3:hover {
+    box-shadow: 0px 20px 50px 0px #3B3E430D;
+    scale: 1;
 
 }
 
@@ -200,30 +231,48 @@ ul {
     width: 100%;
     max-width: 370px;
     border-radius: 15px;
+    transition: 300ms linear;
     background-color: #FFFFFF;
-    box-shadow: 0px 20px 50px 0px #3B3E430D;
     padding: 25px 13px 25px 14px;
     height: 100%;
+}
+
+.bussiness_box4:hover {
+    box-shadow: 0px 20px 50px 0px #3B3E430D;
+    scale: 1;
+
 }
 
 .bussiness_box5 {
     width: 100%;
     max-width: 370px;
     border-radius: 15px;
+    transition: 300ms linear;
     background-color: #FFFFFF;
-    box-shadow: 0px 20px 50px 0px #3B3E430D;
     padding: 25px 13px 25px 14px;
     height: 100%;
+}
+
+.bussiness_box5:hover {
+    box-shadow: 0px 20px 50px 0px #3B3E430D;
+    scale: 1;
+
 }
 
 .bussiness_box6 {
     width: 100%;
     max-width: 370px;
     border-radius: 15px;
+    transition: 300ms linear;
     background-color: #FFFFFF;
-    box-shadow: 0px 20px 50px 0px #3B3E430D;
     padding: 25px 13px 25px 14px;
     height: 100%;
+}
+
+.bussiness_box6:hover {
+    box-shadow: 0px 20px 50px 0px #3B3E430D;
+    scale: 1;
+
 }
 
 .stat_box {
@@ -354,7 +403,20 @@ ul {
     gap: 111px !important;
 }
 
+.mt_400 {
+    margin-top: 200px;
+}
+
 @media (min-width:576px) {
+    .bg_hero {
+        background-image: url("./images/hero_bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100vh;
+    }
+
+
     .mt_400 {
         margin-top: 200px;
     }
@@ -448,6 +510,8 @@ ul {
 }
 
 @media (min-width:768px) {
+
+
     .pt_54 {
         padding-top: 74px;
     }
@@ -534,9 +598,19 @@ ul {
 }
 
 @media (min-width:992px) {
+    .bg_hero {
+        background-image: url("./images/hero_bg.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 1080px !important;
+    }
+
     .pt_54 {
         padding-top: 94px;
     }
+
+
 
     .pb_63 {
         padding-bottom: 104px;
@@ -556,7 +630,7 @@ ul {
     }
 
     .mt_400 {
-        margin-top: 400px;
+        margin-top: 100px;
     }
 
     .mb_200 {
@@ -566,6 +640,10 @@ ul {
 }
 
 @media (min-width:1024px) {
+    .mt_400 {
+        margin-top: 200px;
+    }
+
     .pt_48 {
         padding-top: 104px;
     }
@@ -598,6 +676,11 @@ ul {
         max-width: 400px;
 
     }
+
+    .mt_400 {
+        margin-top: 400px;
+    }
+
 
     .bussiness_box2 {
         max-width: 400px;
